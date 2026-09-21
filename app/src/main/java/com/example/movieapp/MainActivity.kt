@@ -1,7 +1,6 @@
 package com.example.movieapp
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -64,36 +63,7 @@ fun MyApp(content: @Composable () -> Unit) {
     }
 }
 
-@Composable
-fun MovieRow(movie: Movie,
-             onItemClick: (String) -> Unit = {}){
-    Card(modifier = Modifier
-        .padding(4.dp)
-        .fillMaxWidth()
-        .height(130.dp)
-        .clickable {
-            onItemClick(movie.id)
 
-        },
-        shape = RoundedCornerShape(corner = CornerSize(16.dp)),
-        elevation = CardDefaults.cardElevation(6.dp)) {
-        Row(verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.Start) {
-            Surface(
-                modifier = Modifier
-                    .padding(12.dp)
-                    .size(100.dp),
-                shape = RectangleShape,
-                shadowElevation = 4.dp) {
-                Icon(imageVector = Icons.Default.AccountBox,
-                    contentDescription = "Movie Image")
-
-
-            }
-            Text(text = movie.title)
-        }
-    }
-}
 
 
 @Composable

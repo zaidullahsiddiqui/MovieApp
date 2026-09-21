@@ -23,8 +23,7 @@ fun getMovies() : List<Movie> {
             plot = "Asta gets a mysterious five-leaf grimoire with Anti-Magic and joins the Black Bulls, where he fights powerful enemies and uncovers the secrets of his world.",
             poster = "https://m.media-amazon.com/images/M/MV5BNTAzYTlkMWEtJTIyOS00OTU1LWI4MGYtMWZjMjU2Y2ViMGY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
             images = listOf(
-                "https://images.justwatch.com/background/176311651/s1920/black-clover.webp",
-                "https://images.justwatch.com/poster/176311651/s718/black-clover.webp"
+                "https://images.justwatch.com/background/176311651/s1920/black-clover.webp"
             ),
             rating = "8.3"
         ),
