@@ -12,7 +12,7 @@ import com.example.movieapp.screens.details.DetailsScreen
 @Composable
 fun MovieNavigation(){
     val navController = rememberNavController()
-    NavHost(navController =navController,
+    NavHost(navController = navController,
         startDestination = MovieScreens.HomeScreens.name) {
         composable(MovieScreens.HomeScreens.name) {
             //here we pass where this should lead us to
